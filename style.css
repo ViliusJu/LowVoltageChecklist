@@ -1,21 +1,90 @@
-ul {
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: whitesmoke;
+}
+
+#progressBar1,
+#progressBar2,
+#progressBar3,
+#progressBar4,
+#progressBar5,
+#progressBar6 {
+    width: 80%;
+    height: 20px;
+    margin: 15px auto;
+    background-color: rgb(228, 173, 173);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#progressBarFill1,
+#progressBarFill2,
+#progressBarFill3,
+#progressBarFill4,
+#progressBarFill5,
+#progressBarFill6 {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 2s ease-in-out
+}
+
+abbr {
+
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+ul>li {
     list-style-type: none;
-    padding: 0;
-    width: 80vw;
-}
+    margin: 1px 0px;
+    border-bottom: 1px solid black;
 
-li {
-    margin-bottom: 10px;
-}
-
-progress {
-    width: 100%;
-    margin-top: 20px;
-    height: 30px;
 
 }
 
-textarea {
-    display: block;
-    margin: auto;
+button {
+    display: inline-block;
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 3px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 1s ease;
+
+}
+
+button:hover {
+    background-color: #132403;
+    transform: scale(1.1);
+
+
+
+    /* Darker Green */
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
 }
