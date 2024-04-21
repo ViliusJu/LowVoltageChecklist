@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist with Comments and Progress</title>
+    <title>Gaisrinės signalizacijos patikros sąrašas</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -12,70 +12,73 @@
     <header>
         <img alt="ViliusJu" src="./Vilius-J-logo.png" class="logo">
     </header>
-    <h1>Gaisrinės signalizacijos sistemos projektacimo patikros aprašas</h1>
+    <h1>Gaisrinės signalizacijos sistemos projektavimo patikros aprašas</h1>
     <ul id="gaisrinėSignalizacija">
         <h2>1. Gaisrinės signalizacijos pultas</h2>
         <h3>1.1 Centralės vietos parinkimas ir sistemos architektūra</h3>
         <li id="taskID01" class="pultasTaskList">
             <input type="checkbox" id="checkbox01" class="pultasTaskbBox">
-            <abbr title="Gaisrinio pulto vieta netui būti paslėpta">
-                1 Gaisrinės signalizacijos pultą vietą
+            <abbr class="tooltip" data-tooltip="Turi būti patogi prieiti aptarnaujančiam personalui">
+                1. Gaisrinės signalizacijos pultą vietą
                 parinkti tokia, kad būtų patogu prieiti aptarnaujančiam personalui.
             </abbr>
-            <button onclick="addComment('taskID01')">Add Comment</button>
+            <button onclick="addComment('taskID01')">Komentaras</button>
             <ul id="comments_taskID01"></ul>
         </li>
         <li id="taskID02" class="pultasTaskList">
             <input type="checkbox" id="checkbox02" class="pultasTaskbBox">
             <abbr title="Dažniausiai pasitaiko kai yra pastatų kompleksas, didelis pastatas">
-                2 Patikrinti ar centrale neturi apsijungti į aparatinį tinklą su kitomis, suderinti gamintojus ir
+                2. Patikrinti ar centrale neturi apsijungti į aparatinį tinklą su kitomis, suderinti gamintojus ir
                 modelius
             </abbr>
-            <button onclick="addComment('taskID02')">Add Comment</button>
+            <button onclick="addComment('taskID02')">Komentaras</button>
             <ul id="comments_taskID02"></ul>
         </li>
         <li id="taskID03" class="pultasTaskList">
             <input type="checkbox" id="checkbox03" class="pultasTaskbBox">
             <abbr title="">
-                2.1 Numatyti kabelius, jei reikai kabelinius lovvius ar lauko kabeline kanalizacija
+                2.1 Numatyti kabelius, jei reikai kabelinius lovvius ar lauko kabelinę kanalizacijč iki/tarp įrenginių
             </abbr>
-            <button onclick="addComment('taskID03')">Add Comment</button>
+            <button onclick="addComment('taskID03')">Komentaras</button>
             <ul id="comments_taskID03"></ul>
         </li>
 
-        <li id="taskID04" class="pultasTaskList">
+        <!-- 
+<li id="taskID04" class="pultasTaskList">
             <input type="checkbox" id="checkbox04" class="pultasTaskbBox">
             <abbr title="">
                 2.1 Numatyti kabelius, jei reikai kabelinius lovvius ar lauko kabeline kanalizacija
             </abbr>
-            <button onclick="addComment('taskID04')">Add Comment</button>
+            <button onclick="addComment('taskID04')">Komentaras</button>
             <ul id="comments_taskID04"></ul>
         </li>
+
+
+
+     -->
         <li id="taskID05" class="pultasTaskList">
             <input type="checkbox" id="checkbox05" class="pultasTaskbBox">
             <abbr title="">
-                3 Patikrinti ar nereikia nutolusio
-                kartotuvos(PVZ sargo budelėje).
+                3. Patikrinti ar nereikia nutolusio
+                kartotuvos.
             </abbr>
-            <button onclick="addComment('taskID05')">Add Comment</button>
+            <button onclick="addComment('taskID05')">Komentaras</button>
             <ul id="comments_taskID05"></ul>
         </li>
         <li id="taskID06" class="pultasTaskList">
             <input type="checkbox" id="checkbox06" class="pultasTaskbBox">
             <abbr title="">
-                3.1 Numatyti kabelius, kabelinius
-                lovius ar kabelinė kanalizacija iki įrenginio
+                3.1 Numatyti kabelius, kabelinius lovius ar kabelinę kanalizacija iki įrenginio
             </abbr>
-            <button onclick="addComment('taskID06')">Add Comment</button>
+            <button onclick="addComment('taskID06')">Komentaras</button>
             <ul id="comments_taskID06"></ul>
         </li>
         <li id="taskID07" class="pultasTaskList">
             <input type="checkbox" id="checkbox07" class="pultasTaskbBox">
             <abbr title="Jei reikia suderinti įrangos išklotinė.">
-                4 Gaisrinio pulto vieta suderinti su
-                baldais,kita įranga. Nurodyti montavimo aukštį (0.8 - 1.8 m).
+                4 Gaisrinio pulto vieta suderinti su baldais,kita įranga. Nurodyti montavimo aukštį (0.8 - 1.8 m).
             </abbr>
-            <button onclick="addComment('taskID07')">Add Comment</button>
+            <button onclick="addComment('taskID07')">Komentaras</button>
             <ul id="comments_taskID07"></ul>
         </li>
         <h3> 1.2. Gasirinės signalizacijos pukto parinkimas </h3>
@@ -85,7 +88,7 @@
                 5. Parikti centralių ir išplėtimo
                 plokšių kiekį iki 100 įrenginių ant kilpos;
             </abbr>
-            <button onclick="addComment('taskID08')">Add Comment</button>
+            <button onclick="addComment('taskID08')">Komentaras</button>
             <ul id="comments_taskID08"></ul>
         </li>
         <li id="taskID09" class="pultasTaskList">
@@ -94,38 +97,38 @@
                 title="EN54 punktas ????????. Reikia iškoti. Jei viršyja įrenginių kiekį reikia dėti centrale su kelių branduolių procesoriumi. Jos gamotje yra retos. ">
                 6. Įrenginių kiekis ant centralės neturi viršyti 520 vnt.;
             </abbr>
-            <button onclick="addComment('taskID09')">Add Comment</button>
+            <button onclick="addComment('taskID09')">Komentaras</button>
             <ul id="comments_taskID09"></ul>
         </li>
         <li id="taskID10" class="pultasTaskList">
             <input type="checkbox" id="checkbox10" class="pultasTaskbBox">
             <abbr title="">
-                7 Kiti parametrai pagal gautas TS iš užsaskovo (Jei patekta);
+                7. Kiti parametrai pagal gautas TS iš užsaskovo (Jei patekta);
             </abbr>
-            <button onclick="addComment('taskID10')">Add Comment</button>
+            <button onclick="addComment('taskID10')">Komentaras</button>
             <ul id="comments_taskID10"></ul>
         </li>
         <div id="progressBar1">
             <div id="progressBarFill1" style="width: 0;"></div>
         </div>
         <h2>2. Taškiniai jutiklia</h2>
-        <h3>2.1Taškinių jutiklių išdėstymas patalpose</h3>
+        <h3>2.1 Taškinių jutiklių išdėstymas patalpose</h3>
         <li id="taskID11" class="taskiniaiTaskList">
             <input type="checkbox" id="checkbox11" class="taskiniaiTaskbBox">
             <abbr title="Pagal GASS taisykliu punktus ???XX??">
                 1. Jutiklius išdėstyti laikantis "Gaisro aptikimo ir signalizavimo sistemų projektavimo ir įrengimo
                 taisyklių" 31 ir 33 punktais
             </abbr>
-            <button onclick="addComment('taskID11')">Add Comment</button>
+            <button onclick="addComment('taskID11')">Komentaras</button>
             <ul id="comments_taskID11"></ul>
         </li>
         <li id="taskID12" class="taskiniaiTaskList">
             <input type="checkbox" id="checkbox12" class="taskiniaiTaskbBox">
             <abbr title="">
-                2. PArinkti jutiklsius pagal patalpose vykstancius technolginius procesus. Kur galimas dulkėtumas
+                2. Parinkti jutiklsius pagal patalpose vykstancius technolginius procesus. Kur galimas dulkėtumas
                 parinkti temperatūrinius jutikius
             </abbr>
-            <button onclick="addComment('taskID12')">Add Comment</button>
+            <button onclick="addComment('taskID12')">Komentaras</button>
             <ul id="comments_taskID12"></ul>
         </li>
         <li id="taskID13" class="taskiniaiTaskList">
@@ -134,7 +137,7 @@
                 3. Įvertinti koridorius ir siauras patalpas (3 m pločio) iki 3.5 m aukščio (GASS), didinti atstumą
                 tarp jutiklių.
             </abbr>
-            <button onclick="addComment('taskID13')">Add Comment</button>
+            <button onclick="addComment('taskID13')">Komentaras</button>
             <ul id="comments_taskID13"></ul>
         </li>
         <li id="taskID14" class="taskiniaiTaskList">
@@ -142,7 +145,7 @@
             <abbr title="">
                 4. Nurodyti jutklius, kur bazės yra su izoloatpriumi. Kas 32 įrenginiai ir tarp aukštų
             </abbr>
-            <button onclick="addComment('taskID14')">Add Comment</button>
+            <button onclick="addComment('taskID14')">Komentaras</button>
             <ul id="comments_taskID14"></ul>
         </li>
         <li id="taskID15" class="taskiniaiTaskList">
@@ -150,7 +153,7 @@
             <abbr title="">
                 5. Gaisriniai jutikliai sprogiuoje pataloje. Atskitas algorimtas.
             </abbr>
-            <button onclick="addComment('taskID15')">Add Comment</button>
+            <button onclick="addComment('taskID15')">Komentaras</button>
             <ul id="comments_taskID15"></ul>
         </li>
         <h3>2.2 Architektūros, konstrukcijos kitų inžinierinių tinklų įvertinimas </h3>
@@ -161,7 +164,7 @@
                 projektuoti
                 jutiklius virš lubų įskant ir WC, prausyklas ir pan. Projektuoti indikatorius.
             </abbr>
-            <button onclick="addComment('taskID16')">Add Comment</button>
+            <button onclick="addComment('taskID16')">Komentaras</button>
             <ul id="comments_taskID16"></ul>
         </li>
         <li id="taskID17" class="taskiniaiTaskList">
@@ -170,7 +173,7 @@
                 7. žtikrinti jutiklių aptarnavimą.Jei lubos ne amstrogas, duoti užduoti SA daliai aptarnavimo liukams.
                 Derinti ar nėra šalia kitų sistemų aparnavimo jutiklius virš lubų įskant ir WC, prausyklas ir pan.
             </abbr>
-            <button onclick="addComment('taskID17')">Add Comment</button>
+            <button onclick="addComment('taskID17')">Komentaras</button>
             <ul id="comments_taskID17"></ul>
         </li>
         <li id="taskID18" class="taskiniaiTaskList">
@@ -178,7 +181,7 @@
             <abbr title="Gass punktas ???">
                 8. Ivertinit vėdimo tinklus, jei jie platasni nei ??, po jais projektuoti gaisron jutiklius
             </abbr>
-            <button onclick="addComment('taskID18')">Add Comment</button>
+            <button onclick="addComment('taskID18')">Komentaras</button>
             <ul id="comments_taskID18"></ul>
         </li>
         <li id="taskID19" class="taskiniaiTaskList">
@@ -187,7 +190,7 @@
                 9. Įvertinti konstrukcijos elementus. Jei daugiau nei 40 cm traktuoti kaip sieną. Įvertinti ir mazesnius
                 išsikisimus
             </abbr>
-            <button onclick="addComment('taskID19')">Add Comment</button>
+            <button onclick="addComment('taskID19')">Komentaras</button>
             <ul id="comments_taskID19"></ul>
         </li>
         <li id="taskID20" class="taskiniaiTaskList">
@@ -195,7 +198,7 @@
             <abbr title="Gass punktas ???">
                 10. Atraukti jutilius nuo sienų, kitu elementu > 50 cm
             </abbr>
-            <button onclick="addComment('taskID20')">Add Comment</button>
+            <button onclick="addComment('taskID20')">Komentaras</button>
             <ul id="comments_taskID20"></ul>
         </li>
         <li id="taskID21" class="taskiniaiTaskList">
@@ -203,7 +206,7 @@
             <abbr title="Gass punktas ???">
                 11. Įvertinti stelažus. Jei nuo lubų iki 60 cm. Traktuoti kaip sieną
             </abbr>
-            <button onclick="addComment('taskID21')">Add Comment</button>
+            <button onclick="addComment('taskID21')">Komentaras</button>
             <ul id="comments_taskID21"></ul>
         </li>
         <div id="progressBar2">
@@ -216,7 +219,7 @@
             <abbr title="Gass punktas ???">
                 1. Linijinius dumų jutiklius išdėstyti pagal GASS taisyklių 35-38 punktus.
             </abbr>
-            <button onclick="addComment('taskID22')">Add Comment</button>
+            <button onclick="addComment('taskID22')">Komentaras</button>
             <ul id="comments_taskID22"></ul>
         </li>
         <li id="taskID23" class="taskiniaiTaskList">
@@ -225,7 +228,7 @@
                 2. Užtikrinti, kad lazerio signalai nesikirstų su kitomis komunikacijomis ar vamzdžiais. Derinti
                 sprendinius, kad būtų išvengta trikdžių ar klaidingų signalų perdavimo.
             </abbr>
-            <button onclick="addComment('taskID23')">Add Comment</button>
+            <button onclick="addComment('taskID23')">Komentaras</button>
             <ul id="comments_taskID23"></ul>
         </li>
         <li id="taskID24" class="taskiniaiTaskList">
@@ -234,7 +237,7 @@
                 3. Jutiklius numatyti su rezervu siekiant užtikrinti patikimą veikimą net tuo atveju, jei susiduriama su
                 spindulio susikišimu su kitomis komunikacijomis.
             </abbr>
-            <button onclick="addComment('taskID24')">Add Comment</button>
+            <button onclick="addComment('taskID24')">Komentaras</button>
             <ul id="comments_taskID24"></ul>
         </li>
         <h3>3.2 Juikli7 pajungimas</h3>
@@ -244,7 +247,7 @@
                 4. Jei jutikliai adresiniai ir jungiasi į kilpą, patikrinti, ar jie suderinami su gaisriniu pultu, ir ar
                 veikia kilpa
             </abbr>
-            <button onclick="addComment('taskID24')">Add Comment</button>
+            <button onclick="addComment('taskID24')">Komentaras</button>
             <ul id="comments_taskID25"></ul>
         </li>
         <li id="taskID26" class="taskiniaiTaskList">
@@ -253,7 +256,7 @@
                 5. Jei jutikliai konvenciniai ir pajungti per IN/OUT modulius arba per konvencinius zonos monitorius,
                 numatyti papildomus 24 V EN54 maitinimo šaltinius (su akumuliatoriais), patikrinti amperažą
             </abbr>
-            <button onclick="addComment('taskID26')">Add Comment</button>
+            <button onclick="addComment('taskID26')">Komentaras</button>
             <ul id="comments_taskID26"></ul>
         </li>
         <li id="taskID27" class="taskiniaiTaskList">
@@ -261,20 +264,20 @@
             <abbr title="???">
                 5. Pateikti užduoti elektrotechnikos daliai
             </abbr>
-            <button onclick="addComment('taskID27')">Add Comment</button>
+            <button onclick="addComment('taskID27')">Komentaras</button>
             <ul id="comments_taskID27"></ul>
         </li>
         <div id="progressBar3">
             <div id="progressBarFill3" style="width: 0;"></div>
         </div>
-        <h2>Gaisro pavojaus mygtukai</h2>
+        <h2>4. Gaisro pavojaus mygtukai</h2>
         <li id="taskID28" class="taskiniaiTaskList">
             <input type="checkbox" id="checkbox28" class="mygtukaiTaskbBox">
             <abbr title="???">
                 Gaisrinius mygtukus tai, kad evakuacijos kelyje jie būtų 30 m uo žmogaus buvimo vietos. Maksimaliai 3 m
                 nuo laiptinės ar ušėjimo durų
             </abbr>
-            <button onclick="addComment('taskID28')">Add Comment</button>
+            <button onclick="addComment('taskID28')">Komentaras</button>
             <ul id="comments_taskID28"></ul>
         </li>
         <li id="taskID29" class="taskiniaiTaskList">
@@ -282,7 +285,7 @@
             <abbr title="???">
                 Gaisrinių nygtukų vietas suderinti su GS dallimi.
             </abbr>
-            <button onclick="addComment('taskID29')">Add Comment</button>
+            <button onclick="addComment('taskID29')">Komentaras</button>
             <ul id="comments_taskID29"></ul>
         </li>
         <li id="taskID30" class="taskiniaiTaskList">
@@ -290,20 +293,20 @@
             <abbr title="???">
                 Nurodyti gaisrininės signalizacijos mygtukų montavimo aukštis (1,5 m.)
             </abbr>
-            <button onclick="addComment('taskID30')">Add Comment</button>
+            <button onclick="addComment('taskID30')">Komentaras</button>
             <ul id="comments_taskID30"></ul>
         </li>
 
         <div id="progressBar4">
             <div id="progressBarFill4" style="width: 0;"></div>
         </div>
-        <h2>Gaisro pavojaus skelbimo įrenginiai</h2>
+        <h2> 5. Gaisro pavojaus skelbimo įrenginiai</h2>
         <li id="taskID31" class="sirenosTaskList">
             <input type="checkbox" id="checkbox31" class="sirenosTaskbBox">
             <abbr title="Labai nėra tikslesnio reglamentavimo. Reikia ieškoto gerųjų prektikų">
                 Vidaus Sirenas su blykstėmis projektuoti salėse, koridoriuose prie įėjimų. Kad būtų girdimos
             </abbr>
-            <button onclick="addComment('taskID31')">Add Comment</button>
+            <button onclick="addComment('taskID31')">Komentaras</button>
             <ul id="comments_taskID31"></ul>
         </li>
         <li id="taskID32" class="sirenosTaskList">
@@ -311,7 +314,7 @@
             <abbr title="">
                 Projektuoti gaisro pavojaus blykstes Neįgaliųjų sanitariniuose mazguose, persirengimo patalpose.
             </abbr>
-            <button onclick="addComment('taskID32')">Add Comment</button>
+            <button onclick="addComment('taskID32')">Komentaras</button>
             <ul id="comments_taskID32"></ul>
         </li>
         <li id="taskID33" class="sirenosTaskList">
@@ -319,7 +322,7 @@
             <abbr title="">
                 Nurodyti vidaus gaisrinių sirenų aukštį. Apie 2.7 m , 20 cm nuo lubų,
             </abbr>
-            <button onclick="addComment('taskID33')">Add Comment</button>
+            <button onclick="addComment('taskID33')">Komentaras</button>
             <ul id="comments_taskID33"></ul>
         </li>
         <li id="taskID34" class="sirenosTaskList">
@@ -327,7 +330,7 @@
             <abbr title="">
                 Lauko sireną numatyti taip, kad būtų matoma nuo gatvės arba budinačiam personalui.
             </abbr>
-            <button onclick="addComment('taskID35')">Add Comment</button>
+            <button onclick="addComment('taskID35')">Komentaras</button>
             <ul id="comments_taskID34"></ul>
         </li>
         <li id="taskID35" class="sirenosTaskList">
@@ -336,7 +339,7 @@
                 Nurodyti gaisrinės sirenos aukštį. Derinti fasadus, įvertinit padusus, įvertinti fasado elementus. Apie
                 3 m
             </abbr>
-            <button onclick="addComment('taskID35')">Add Comment</button>
+            <button onclick="addComment('taskID35')">Komentaras</button>
             <ul id="comments_taskID35"></ul>
         </li>
 
@@ -344,13 +347,13 @@
             <div id="progressBarFill5" style="width: 0;"></div>
         </div>
 
-        <h2>Suderinimas su kitomis inžinierinėmis sistemomis</h2>
+        <h2>6. Suderinimas su kitomis inžinierinėmis sistemomis</h2>
         <li id="taskID36" class="signalaiTaskList">
             <input type="checkbox" id="checkbox36" class="signalaiTaskbBox">
             <abbr title="">
                 Pateikti užduoti Elektrotechnikos projekto daliai
             </abbr>
-            <button onclick="addComment('taskID36')">Add Comment</button>
+            <button onclick="addComment('taskID36')">Komentaras</button>
             <ul id="comments_taskID36"></ul>
         </li>
         <li id="taskID37" class="signalaiTaskList">
@@ -359,7 +362,7 @@
                 Paduoti signalus "Gaisras" ir "Gedimas" į apsauginė signalizaciją. Iš Gaisrinės signalizacios
                 kontrolinio pulto
             </abbr>
-            <button onclick="addComment('taskID37')">Add Comment</button>
+            <button onclick="addComment('taskID37')">Komentaras</button>
             <ul id="comments_taskID37"></ul>
         </li>
         <li id="taskID38" class="signalaiTaskList">
@@ -367,7 +370,7 @@
             <abbr title="">
                 Gauti užduoti iš ŠVOK dalies. Atjungti nurodytus įrenginius. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID38')">Add Comment</button>
+            <button onclick="addComment('taskID38')">Komentaras</button>
             <ul id="comments_taskID38"></ul>
         </li>
         <li id="taskID39" class="signalaiTaskList">
@@ -375,7 +378,7 @@
             <abbr title="">
                 Gauti užduoti iš E dalies. Atjungti nurodytus įrenginius. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID39')">Add Comment</button>
+            <button onclick="addComment('taskID39')">Komentaras</button>
             <ul id="comments_taskID39"></ul>
         </li>
         <li id="taskID39" class="signalaiTaskList">
@@ -383,7 +386,7 @@
             <abbr title="">
                 Gauti užduoti iš PVA dalies. Atjungti nurodytus įrenginius. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID39')">Add Comment</button>
+            <button onclick="addComment('taskID39')">Komentaras</button>
             <ul id="comments_taskID39"></ul>
         </li>
         <li id="taskID40" class="signalaiTaskList">
@@ -391,7 +394,7 @@
             <abbr title="">
                 Atjungti praėjimo kontrole kontroliuojamas duris. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID40')">Add Comment</button>
+            <button onclick="addComment('taskID40')">Komentaras</button>
             <ul id="comments_taskID40"></ul>
         </li>
         <li id="taskID41" class="signalaiTaskList">
@@ -399,7 +402,7 @@
             <abbr title="">
                 Atjungti dujų vožtuvą gaisro metu. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID41')">Add Comment</button>
+            <button onclick="addComment('taskID41')">Komentaras</button>
             <ul id="comments_taskID41"></ul>
         </li>
         <li id="taskID42" class="signalaiTaskList">
@@ -407,10 +410,19 @@
             <abbr title="">
                 Atjungti kompresorius jei yra. Numatyti reikalingą IN/OUT kiekį
             </abbr>
-            <button onclick="addComment('taskID42')">Add Comment</button>
+            <button onclick="addComment('taskID42')">Komentaras</button>
             <ul id="comments_taskID42"></ul>
         </li>
+        <li id="taskID43" class="signalaiTaskList">
+            <input type="checkbox" id="checkbox43" class="signalaiTaskbBox">
+            <abbr title="">
+                Jei centralei reikalingas LAN, duoti užduoti/derinti su ER dalimi.
+            </abbr>
+            <button onclick="addComment('taskID43')">Komentaras</button>
+            <ul id="comments_taskID43"></ul>
+        </li>
         <div id="progressBar6">
+
             <div id="progressBarFill6" style="width: 0;"></div>
         </div>
         <h2>Įrangos žymėjimas, kabeliavimas, adresavimas</h2>
@@ -424,6 +436,7 @@
     </ul>
 
 
+    <div class="element-with-triangle">Your Text Here</div>
     <script src="./app.js">
 
     </script>
