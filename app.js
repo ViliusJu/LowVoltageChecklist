@@ -11,7 +11,7 @@
           const totalTasks5 = document.querySelectorAll('input[type="checkbox"].sirenosTaskbBox').length;
           const completedTasks5 = document.querySelectorAll('input[type="checkbox"].sirenosTaskbBox:checked').length;
           const totalTasks6 = document.querySelectorAll('input[type="checkbox"].signalaiTaskbBox').length;
-          const completedTasks6 = document.querySelectorAll('input[type="checkbox"].TaskbBox:checked').length;
+          const completedTasks6 = document.querySelectorAll('input[type="checkbox"].signalaiTaskbBox:checked').length;
           const progress1 = (completedTasks1 / totalTasks1) * 100;
           const progress2 = (completedTasks2 / totalTasks2) * 100;
           const progress3 = (completedTasks3 / totalTasks3) * 100;
@@ -79,8 +79,8 @@
           loadComments('taskID02');
          loadCheckboxState('taskID03'); 
           loadComments('taskID03');
-          loadCheckboxState('taskID04'); 
-          loadComments('taskID04');
+       //   loadCheckboxState('taskID04'); 
+       //  loadComments('taskID04');
           loadCheckboxState('taskID05'); 
           loadComments('taskID05');
           loadCheckboxState('taskID06'); 
@@ -143,8 +143,27 @@
           loadComments('taskID34');
           loadCheckboxState('taskID35'); 
           loadComments('taskID35');
-          //loadCheckboxState('taskID36'); 
-          //loadComments('taskID36');
+          loadCheckboxState('taskID36'); 
+          loadComments('taskID36');
+          loadCheckboxState('taskID37'); 
+          loadComments('taskID37');
+          loadCheckboxState('taskID37'); 
+          loadComments('taskID37');
+          loadCheckboxState('taskID38'); 
+          loadComments('taskID38');
+          loadCheckboxState('taskID39'); 
+          loadComments('taskID39');
+          loadCheckboxState('taskID40'); 
+          loadComments('taskID40');
+          loadCheckboxState('taskID41'); 
+          loadComments('taskID41');
+          loadCheckboxState('taskID42'); 
+          loadComments('taskID42');
+          loadCheckboxState('taskID43'); 
+          loadComments('taskID43');
+
+
+
           updateProgressBar();
       };
 
