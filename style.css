@@ -3,12 +3,26 @@ body {
     background: whitesmoke;
 }
 
+.veryImpostantParagraph {
+    text-align: center;
+    font-size: 1.5em;
+    font-style: bold;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px auto;
+}
+
 #progressBar1,
 #progressBar2,
 #progressBar3,
 #progressBar4,
 #progressBar5,
-#progressBar6 {
+#progressBar6,
+#progressBar7,
+#progressBar8,
+#progressBar9,
+#progressBar10,
+#progressBar11 {
     width: 80%;
     height: 20px;
     margin: 15px auto;
@@ -24,7 +38,12 @@ body {
 #progressBarFill3,
 #progressBarFill4,
 #progressBarFill5,
-#progressBarFill6 {
+#progressBarFill6,
+#progressBarFill7,
+#progressBarFill8,
+#progressBarFill10,
+#progressBarFill9,
+#progressBarFill11 {
     height: 100%;
     background-color: #4caf50;
     border-radius: 5px;
