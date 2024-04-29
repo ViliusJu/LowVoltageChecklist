@@ -34,6 +34,9 @@
          const totalTasks11 = document.querySelectorAll('input[type="checkbox"]._BR_TaskbBox').length;
          const completedTasks11 = document.querySelectorAll('input[type="checkbox"]._BR_TaskbBox:checked').length
 
+         const totalTasks12 = document.querySelectorAll('input[type="checkbox"].neigalijuIrangaTaskbBox').length;
+         const completedTasks12 = document.querySelectorAll('input[type="checkbox"].neigalijuIrangaTaskbBox:checked').length
+
           const progress1 = (completedTasks1 / totalTasks1) * 100;
           const progress2 = (completedTasks2 / totalTasks2) * 100;
           const progress3 = (completedTasks3 / totalTasks3) * 100;
@@ -45,6 +48,7 @@
           const progress9 = (completedTasks9 / totalTasks9) * 100;
           const progress10 = (completedTasks10 / totalTasks10) * 100;
           const progress11 = (completedTasks11 / totalTasks11) * 100;
+          const progress12 = (completedTasks12 / totalTasks12) * 100;
 
           document.getElementById('progressBarFill1').style.width = progress1 + '%';
           document.getElementById('progressBarFill2').style.width = progress2 + '%';
@@ -57,6 +61,7 @@
           document.getElementById('progressBarFill9').style.width = progress9 + '%';
           document.getElementById('progressBarFill10').style.width = progress10 + '%';
           document.getElementById('progressBarFill11').style.width = progress11 + '%';
+
       }
  
 
@@ -106,7 +111,7 @@
 
 
       window.onload = function() {
-        for (var i = 1; i <= 94; i++) {
+        for (var i = 1; i <= 95; i++) {
             var taskId = 'taskID' + (i < 10 ? '0' + i : i); // Ensures the task ID is always two digits
             loadCheckboxState(taskId);
             loadComments(taskId);

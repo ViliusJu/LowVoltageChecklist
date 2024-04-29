@@ -22,7 +22,8 @@ body {
 #progressBar8,
 #progressBar9,
 #progressBar10,
-#progressBar11 {
+#progressBar11,
+#progressBar12 {
     width: 80%;
     height: 20px;
     margin: 15px auto;
@@ -43,7 +44,8 @@ body {
 #progressBarFill8,
 #progressBarFill10,
 #progressBarFill9,
-#progressBarFill11 {
+#progressBarFill11,
+#progressBarFill12 {
     height: 100%;
     background-color: #4caf50;
     border-radius: 5px;
