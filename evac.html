@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evakuacinio įgarsinimo sistema</title>
+    `
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Evakuacinio įgarsinimo sistemos patikros aprašas</h1>
+    <p class="veryImpostantParagraph">Projektai projektuojami ant aktualių architektūros
+        planų, pjūvių. Remiantis aktualia Gaisrinė Saugos dalimi</p>
+
+    <ul>
+        <h3>Sistemos tipo parinkimas, komutacinės spintos vietos parinkimas</h3>
+        <li id="evac_taskId01" class="evacTaskList">
+            <input type="checkbox" id="checkbox01" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                1. Balsinis evakuacinis įgarsinimas projektuojamas, jei yra gauta užduotis iš gaisrinės saugos dalies.
+            </abbr>
+            <button onclick="addComment1('evac_taskId01')">Komentaras</button>
+            <ul id="evac_d_taskId01"></ul>
+        </li>
+        <li id="evac_taskId02" class="evacTaskList">
+            <input type="checkbox" id="checkbox02" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                2. Jei galima projektuojama atskira spinta evakuacinio įgarsinimo sistemai. Dažnai šalia ryšių spintos.
+                Vieta derinama. Derinti
+            </abbr>
+            <button onclick="addComment1('evac_taskId02')">Komentaras</button>
+            <ul id="evac_d_taskId02"></ul>
+        </li>
+        <h3>Garsiakalbių išdėstymas</h3>
+        <li id="evac_taskId03" class="evacTaskList">
+            <input type="checkbox" id="checkbox03" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                2.Garsiakalbiai patalpose išdėstomi kas: ???? 6 metrus berod???
+            </abbr>
+            <button onclick="addComment1('evac_taskId03')">Komentaras</button>
+            <ul id="evac_d_taskId03"></ul>
+        </li>
+        <li id="evac_taskId04" class="evacTaskList">
+            <input type="checkbox" id="checkbox04" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                2. Būtinai garsiakalbiai neįgalųjų patalpose
+            </abbr>
+            <button onclick="addComment1('evac_taskId04')">Komentaras</button>
+            <ul id="evac_d_taskId04"></ul>
+        </li>
+        <li id="evac_taskId04" class="evacTaskList">
+            <input type="checkbox" id="checkbox04" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                3. Būtinai garsiakalbiai neįgalųjų patalpose
+            </abbr>
+            <button onclick="addComment1('evac_taskId04')">Komentaras</button>
+            <ul id="evac_d_taskId04"></ul>
+        </li>
+        <li id="evac_taskId05" class="evacTaskList">
+            <input type="checkbox" id="checkbox05" class="evacTaskbBox">
+            <abbr class="tooltip" data-tooltip="">
+                3. Kur yra pakabinamos lubos lubinius/įleidžiamus. Kur nėra sieninius/ruporinius. Yra įmanoma ir lubinį
+                garsiaklabį sumontuoti kaip sieninį, bet reikalinga įleidžiama diežutė.
+            </abbr>
+            <button onclick="addComment1('evac_taskId05')">Komentaras</button>
+            <ul id="evac_d_taskId05"></ul>
+        </li>
+
+    </ul>
+
+
+
+</body>
+
+</html>

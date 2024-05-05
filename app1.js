@@ -11,55 +11,57 @@ function updateProgressBar1() {
 
 }
  // Function to save checkbox state to localStorage
- function saveCheckboxState1(taskId, isChecked) {
-    localStorage.setItem(taskId, isChecked);
+ function saveCheckboxState1(d_taskId, isChecked) {
+    localStorage.setItem(d_taskId, isChecked);
     updateProgressBar1();
     
 }
 
 // Function to load checkbox state from localStorage
-function loadCheckboxState1(taskId) {
-    const isChecked = localStorage.getItem(taskId) === 'true';
-    document.getElementById(taskId).querySelector('input[type="checkbox"]').checked = isChecked;
+function loadCheckboxState1(d_taskId) {
+    const isChecked = localStorage.getItem(d_taskId) === 'true';
+    document.getElementById(d_taskId).querySelector('input[type="checkbox"]').checked = isChecked;
 }
 
 // Function to save comments to localStorage
-function saveComment1(taskId, comment) {
-    let comments = JSON.parse(localStorage.getItem(`${taskId}_comments`)) || [];
+function saveComment1(d_taskId, comment) {
+    let comments = JSON.parse(localStorage.getItem(`${d_taskId}_comments`)) || [];
     comments.push(comment);
-    localStorage.setItem(`${taskId}_comments`, JSON.stringify(comments));
+    localStorage.setItem(`${d_taskId}_comments`, JSON.stringify(comments));
 }
 
 // Function to load comments from localStorage
-function loadComments1(taskId) {
-    const comments = JSON.parse(localStorage.getItem(`${taskId}_comments`)) || [];
-    const commentsList = document.getElementById(`comments_${taskId}`);
-    commentsList.innerHTML = comments.map(comment => `<li>${comment}<button onclick="deleteComment1('${taskId}', '${comment}')">Delete</button></li>`).join('');
+function loadComments1(d_taskId) {
+    const comments = JSON.parse(localStorage.getItem(`${d_taskId}_comments`)) || [];
+    const commentsList = document.getElementById(`comments_${d_taskId}`);
+    commentsList.innerHTML = comments.map(comment => `<li>${comment}<button onclick="deleteComment1('${d_taskId}', '${comment}')">Delete</button></li>`).join('');
 }
 
 // Function to add a comment
-function addComment1(taskId) {
+function addComment1(d_taskId) {
     const comment = prompt("Enter your comment:");
     if (comment) {
-        saveComment1(taskId, comment);
-        loadComments1(taskId);
+        saveComment1(d_taskId, comment);
+        loadComments1(d_taskId);
     }
 }
 
 // Function to delete a comment
-function deleteComment1(taskId, comment) {
-    let comments = JSON.parse(localStorage.getItem(`${taskId}_comments`)) || [];
+function deleteComment1(d_taskId, comment) {
+    let comments = JSON.parse(localStorage.getItem(`${d_taskId}_comments`)) || [];
     comments = comments.filter(c => c !== comment);
-    localStorage.setItem(`${taskId}_comments`, JSON.stringify(comments));
-    loadComments1(taskId);
+    localStorage.setItem(`${d_taskId}_comments`, JSON.stringify(comments));
+    loadComments1(d_taskId);
 }
 
 
 window.onload = function () {
-    loadCheckboxState1('taskID96'); 
-    loadComments1('taskID96');
-    loadCheckboxState1('taskID97'); 
-    loadComments1('taskID97');
+    loadCheckboxState1('d_taskId01'); 
+    loadComments1('d_taskId01');
+    loadCheckboxState1('d_taskId02'); 
+    loadComments1('d_taskId02');
+    loadCheckboxState1('d_taskId03'); 
+    loadComments1('d_taskId03');
     updateProgressBar1();
 
 }
